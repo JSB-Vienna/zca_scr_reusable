@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_CA_ENH_SCREEN_BY_DC</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Common object: Enhance screen/dynpro by docking container</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_CA_ENH_SCREEN_BY_DC</CLSNAME>
+     <CMPNAME>CHECK_RELEVANCE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check, if it is currently relevant to enhance the screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_CA_ENH_SCREEN_BY_DC</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Constructor</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_CA_ENH_SCREEN_BY_DC</CLSNAME>
+     <CMPNAME>CREATE_DOCKING_CONTAINER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Create docking container (redefine, if constr param too less</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_CA_ENH_SCREEN_BY_DC</CLSNAME>
+     <CMPNAME>CREATE_N_DISPLAY_DOCKING</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Create the docking container and display</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_CA_ENH_SCREEN_BY_DC</CLSNAME>
+     <CMPNAME>DETERMINE_CTRL_FROM_DC_CHILDS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Lookup for an active workitem and get object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_CA_ENH_SCREEN_BY_DC</CLSNAME>
+     <CMPNAME>GET_CTRL_FROM_BUFFER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get control from buffer (check for workitem, if requested)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_CA_ENH_SCREEN_BY_DC</CLSNAME>
+     <CMPNAME>GET_DC_FROM_BUFFER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get docking from buffer (creates + insert DC if not exist)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_CA_ENH_SCREEN_BY_DC</CLSNAME>
+     <CMPNAME>MS_CTRL_BUFFER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Workarea for buffered controls / containers</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_CA_ENH_SCREEN_BY_DC</CLSNAME>
+     <CMPNAME>MS_DC_BUFFER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Workarea for buffered docking containers</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_CA_ENH_SCREEN_BY_DC</CLSNAME>
+     <CMPNAME>MT_CTRL_BUFFER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Buffer for used controls / containers</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_CA_ENH_SCREEN_BY_DC</CLSNAME>
+     <CMPNAME>MT_DC_BUFFER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Buffer for used docking containers</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_CA_ENH_SCREEN_BY_DC</CLSNAME>
+     <CMPNAME>MV_DC_IS_NEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>1 = Docking container is new; 0 = already buffered</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_CA_ENH_SCREEN_BY_DC</CLSNAME>
+     <CMPNAME>MV_DYNNR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Screen / dynpro no. the docking container is attached</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_CA_ENH_SCREEN_BY_DC</CLSNAME>
+     <CMPNAME>MV_LIFETIME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Lifetime of control</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_CA_ENH_SCREEN_BY_DC</CLSNAME>
+     <CMPNAME>MV_RATIO</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Ratio the screen is used in percent</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_CA_ENH_SCREEN_BY_DC</CLSNAME>
+     <CMPNAME>MV_REPID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Program name to screen / dynpro</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_CA_ENH_SCREEN_BY_DC</CLSNAME>
+     <CMPNAME>MV_SIDE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Docking side</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_CA_ENH_SCREEN_BY_DC</CLSNAME>
+     <CMPNAME>SET_CTRL_INTO_BUFFER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set control into buffer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_CA_ENH_SCREEN_BY_DC</CLSNAME>
+     <CMPNAME>SET_CURRENT_CTRLS_VISIBLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set all included controls / containers in- / visible</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_CA_ENH_SCREEN_BY_DC</CLSNAME>
+     <CMPNAME>SET_DC_INTO_BUFFER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set docking container into buffer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_CA_ENH_SCREEN_BY_DC</CLSNAME>
+     <CMPNAME>TY_S_CTRL_BUFFER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Workarea for buffered controls / containers</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_CA_ENH_SCREEN_BY_DC</CLSNAME>
+     <CMPNAME>TY_S_DC_BUFFER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Workarea for buffered docking containers</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_CA_ENH_SCREEN_BY_DC</CLSNAME>
+     <CMPNAME>TY_T_CTRL_BUFFER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Buffer for used controls / containers</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_CA_ENH_SCREEN_BY_DC</CLSNAME>
+     <CMPNAME>TY_T_DC_BUFFER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Buffer for used docking containers</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
